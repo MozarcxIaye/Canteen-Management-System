@@ -36,11 +36,11 @@ A full-stack web application designed to digitize food ordering in university an
 
 2. **Install Dependencies:**
    ```Bash
-npm install
-cd client && npm install
-cd ../server && npm install
+   npm install
+   cd client && npm install
+   cd ../server && npm install
 
-3. **Run Application:**
+1. **Run Application:**
    ```Bash
-# From root directory
-npm run dev
+   # From root directory
+   npm run dev
