@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import connectDB from './config/db.js';
+import authRoutes from './routes/auth.route.js'
 
 // Load environment variables
 dotenv.config();
@@ -16,6 +17,8 @@ const app = express();
 app.use(express.json()); // Parse JSON bodies
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 
+
+app.use('/api/auth', authRoutes)
 
 
 // Connect to database
